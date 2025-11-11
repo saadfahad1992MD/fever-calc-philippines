@@ -11,7 +11,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { AlertTriangle, Calculator, Info, X, ZoomIn, Pill, Flame, Shield, Clock, Users, CheckCircle, Linkedin } from 'lucide-react'
 import { LanguageToggle } from './components/LanguageToggle.jsx'
 import linkedinLogo from './assets/linkedin-logo.png'
-import { medicationsIndiaEnglish } from './data/medicationsIndiaEnglish.js'
+import { medicationsIndia } from './data/medicationsIndia.js'
 import './App.css'
 
 // Import medication images
@@ -307,8 +307,8 @@ const suppositories = {
 
 */
 
-// Use Indian medications database (English)
-const medications = medicationsIndiaEnglish;
+// Use Indian medications database (Hindi)
+const medications = medicationsIndia;
 
 function AppEnglish({ onChangeLanguage }) {
   const [weight, setWeight] = useState('') // String for text input
