@@ -1,6 +1,6 @@
 // Indian Medications Database - English Version
 
-// Placeholder images - will be replaced with actual product images
+// Real medication images
 const placeholderImg = '/medications/placeholder.jpg'
 
 export const medicationsIndiaEnglish = {
@@ -12,7 +12,7 @@ export const medicationsIndiaEnglish = {
       concentration: 100, // mg per 1ml
       volume: 1, // ml
       form: 'Drops',
-      image: placeholderImg,
+      image: '/medications/crocin_baby_drops.png',
       ageRestriction: 'Infants'
     },
     {
@@ -22,7 +22,7 @@ export const medicationsIndiaEnglish = {
       concentration: 120, // mg per 5ml
       volume: 5, // ml
       form: 'Syrup',
-      image: placeholderImg,
+      image: '/medications/crocin_120.png',
       ageRestriction: 'Up to 5 years'
     },
     {
@@ -32,7 +32,7 @@ export const medicationsIndiaEnglish = {
       concentration: 240, // mg per 5ml
       volume: 5, // ml
       form: 'Syrup',
-      image: placeholderImg,
+      image: '/medications/crocin_240.png',
       ageRestriction: ''
     },
     {
@@ -42,7 +42,7 @@ export const medicationsIndiaEnglish = {
       concentration: 250, // mg per 5ml
       volume: 5, // ml
       form: 'Syrup',
-      image: placeholderImg,
+      image: '/medications/calpol_250.jpg',
       ageRestriction: ''
     },
     {
@@ -52,7 +52,7 @@ export const medicationsIndiaEnglish = {
       concentration: 250, // mg per 5ml
       volume: 5, // ml
       form: 'Syrup',
-      image: placeholderImg,
+      image: '/medications/dolo_250.jpg',
       ageRestriction: ''
     }
   ],
@@ -64,7 +64,7 @@ export const medicationsIndiaEnglish = {
       concentration: 100, // mg per 5ml
       volume: 5, // ml
       form: 'Syrup',
-      image: placeholderImg,
+      image: '/medications/ibugesic_syrup.jpg',
       ageRestriction: '6 months and above'
     }
   ],

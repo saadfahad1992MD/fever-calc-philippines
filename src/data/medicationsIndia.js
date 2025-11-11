@@ -13,7 +13,7 @@ export const medicationsIndia = {
       concentration: 100, // mg per 1ml
       volume: 1, // ml
       form: 'ड्रॉप्स',
-      image: placeholderImg,
+      image: '/medications/crocin_baby_drops.png',
       ageRestriction: 'शिशुओं के लिए'
     },
     {
@@ -23,7 +23,7 @@ export const medicationsIndia = {
       concentration: 120, // mg per 5ml
       volume: 5, // ml
       form: 'सिरप',
-      image: placeholderImg,
+      image: '/medications/crocin_120.png',
       ageRestriction: '5 साल तक'
     },
     {
@@ -32,8 +32,8 @@ export const medicationsIndia = {
       ingredient: 'पैरासिटामोल',
       concentration: 240, // mg per 5ml
       volume: 5, // ml
-      form: 'सिरप',
-      image: placeholderImg,
+      form: 'سيرप',
+      image: '/medications/crocin_240.png',
       ageRestriction: ''
     },
     {
@@ -43,7 +43,7 @@ export const medicationsIndia = {
       concentration: 250, // mg per 5ml
       volume: 5, // ml
       form: 'सिरप',
-      image: placeholderImg,
+      image: '/medications/calpol_250.jpg',
       ageRestriction: ''
     },
     {
@@ -53,7 +53,7 @@ export const medicationsIndia = {
       concentration: 250, // mg per 5ml
       volume: 5, // ml
       form: 'सिरप',
-      image: placeholderImg,
+      image: '/medications/dolo_250.jpg',
       ageRestriction: ''
     }
   ],
@@ -65,7 +65,7 @@ export const medicationsIndia = {
       concentration: 100, // mg per 5ml
       volume: 5, // ml
       form: 'सिरप',
-      image: placeholderImg,
+      image: '/medications/ibugesic_syrup.jpg',
       ageRestriction: '6 महीने और उससे अधिक'
     }
   ],
