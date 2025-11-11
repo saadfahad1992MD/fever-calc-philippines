@@ -1207,20 +1207,20 @@ function AppEnglish({ onChangeLanguage }) {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Info className="h-5 w-5 text-blue-600" />
-                    Comprehensive Drug Families Guide
+                    दवा परिवारों की व्यापक मार्गदर्शिका
                   </CardTitle>
                   <CardDescription>
-                    Learn about different types of medications, how they work, and available brand names
+                    विभिन्न प्रकार की दवाओं, उनके काम करने के तरीके और उपलब्ध ब्रांड नामों के बारे में जानें
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Accordion type="single" collapsible className="w-full">
-                     {/* Paracetamol Family */}
+                     {/* पैरासिटामोल परिवार */}
                     <AccordionItem value="paracetamol">
                       <AccordionTrigger className="text-right">
                         <div className="flex items-center gap-2 md:gap-3">
                           <Pill className="h-5 w-5 text-blue-600" />
-                          <span className="text-lg font-semibold">Paracetamol Family</span>
+                          <span className="text-lg font-semibold">पैरासिटामोल परिवार</span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent className="space-y-6 pt-4">
@@ -1265,7 +1265,7 @@ function AppEnglish({ onChangeLanguage }) {
                       <AccordionTrigger className="text-right">
                         <div className="flex items-center gap-2 md:gap-3">
                           <Flame className="h-5 w-5 text-red-600" />
-                          <span className="text-lg font-semibold">Ibuprofen & Diclofenac "NSAIDs" Family</span>
+                          <span className="text-lg font-semibold">आइबूप्रोफेन और डाइक्लोफेनाक "NSAIDs" परिवार</span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent className="space-y-6 pt-4">
@@ -1319,8 +1319,8 @@ function AppEnglish({ onChangeLanguage }) {
                       <AccordionTrigger className="text-right">
                         <div className="flex items-center gap-2 md:gap-3">
                           <Shield className="h-5 w-5 text-green-600" />
-                          <span className="text-lg font-semibold">Drug Comparison and Usage Guidelines</span>
-                          <Badge variant="secondary" className="bg-green-100 text-green-800">Full Guide</Badge>
+                          <span className="text-lg font-semibold">दवा तुलना और उपयोग दिशानिर्देश</span>
+                          <Badge variant="secondary" className="bg-green-100 text-green-800">पूर्ण मार्गदर्शिका</Badge>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent className="space-y-6 pt-4">
@@ -1478,10 +1478,10 @@ function AppEnglish({ onChangeLanguage }) {
                 <CardHeader className="p-4 md:p-6">
                   <CardTitle className="flex items-center gap-2 text-base md:text-lg">
                     <Info className="h-4 w-4 md:h-5 md:w-5 text-yellow-600" />
-                    Frequently Asked Questions About Fever Reducers for Children
+                    बच्चों के लिए बुखार की दवाओं के बारे में अक्सर पूछे जाने वाले प्रश्न
                   </CardTitle>
                   <CardDescription className="text-xs md:text-sm">
-                    Answers to the most common questions about using fever reducers for children
+                    बच्चों के लिए बुखार की दवाओं के उपयोग के बारे में सबसे आम प्रश्नों के उत्तर
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-3 md:p-6">
