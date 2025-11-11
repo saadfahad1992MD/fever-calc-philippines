@@ -1,0 +1,146 @@
+// Indian Medications Database - English Version
+
+// Placeholder images - will be replaced with actual product images
+const placeholderImg = '/medications/placeholder.jpg'
+
+export const medicationsIndiaEnglish = {
+  paracetamol: [
+    {
+      id: 'crocin_drops',
+      name: 'Crocin Baby Drops',
+      ingredient: 'Paracetamol',
+      concentration: 100, // mg per 1ml
+      volume: 1, // ml
+      form: 'Drops',
+      image: placeholderImg,
+      ageRestriction: 'Infants'
+    },
+    {
+      id: 'crocin_120',
+      name: 'Crocin 120 Suspension',
+      ingredient: 'Paracetamol',
+      concentration: 120, // mg per 5ml
+      volume: 5, // ml
+      form: 'Syrup',
+      image: placeholderImg,
+      ageRestriction: 'Up to 5 years'
+    },
+    {
+      id: 'crocin_240',
+      name: 'Crocin 240 Suspension',
+      ingredient: 'Paracetamol',
+      concentration: 240, // mg per 5ml
+      volume: 5, // ml
+      form: 'Syrup',
+      image: placeholderImg,
+      ageRestriction: ''
+    },
+    {
+      id: 'calpol_250',
+      name: 'Calpol 250 Suspension',
+      ingredient: 'Paracetamol',
+      concentration: 250, // mg per 5ml
+      volume: 5, // ml
+      form: 'Syrup',
+      image: placeholderImg,
+      ageRestriction: ''
+    },
+    {
+      id: 'dolo_syrup',
+      name: 'Dolo Syrup',
+      ingredient: 'Paracetamol',
+      concentration: 250, // mg per 5ml
+      volume: 5, // ml
+      form: 'Syrup',
+      image: placeholderImg,
+      ageRestriction: ''
+    }
+  ],
+  ibuprofen: [
+    {
+      id: 'ibugesic_syrup',
+      name: 'Ibugesic Syrup',
+      ingredient: 'Ibuprofen',
+      concentration: 100, // mg per 5ml
+      volume: 5, // ml
+      form: 'Syrup',
+      image: placeholderImg,
+      ageRestriction: '6 months and above'
+    }
+  ],
+  combination: [
+    {
+      id: 'combiflam_suspension',
+      name: 'Combiflam Suspension',
+      ingredient: 'Ibuprofen + Paracetamol',
+      concentration: 100, // mg Ibuprofen per 5ml
+      concentration2: 162.5, // mg Paracetamol per 5ml
+      volume: 5, // ml
+      form: 'Syrup',
+      image: placeholderImg,
+      ageRestriction: '6 months and above',
+      dualIngredient: true
+    },
+    {
+      id: 'ibugesic_plus',
+      name: 'Ibugesic Plus Syrup',
+      ingredient: 'Ibuprofen + Paracetamol',
+      concentration: 100, // mg Ibuprofen per 5ml
+      concentration2: 162.5, // mg Paracetamol per 5ml
+      volume: 5, // ml
+      form: 'Syrup',
+      image: placeholderImg,
+      ageRestriction: '6 months and above',
+      dualIngredient: true
+    },
+    {
+      id: 'brufen_p_junior',
+      name: 'Brufen P Junior',
+      ingredient: 'Ibuprofen + Paracetamol',
+      concentration: 100, // mg Ibuprofen per 5ml
+      concentration2: 162.5, // mg Paracetamol per 5ml
+      volume: 5, // ml
+      form: 'Syrup',
+      image: placeholderImg,
+      ageRestriction: '6 months and above',
+      dualIngredient: true
+    }
+  ],
+  suppositories: {
+    paracetamol: [
+      {
+        id: 'suppol_baby',
+        name: 'Suppol Baby',
+        ingredient: 'Paracetamol',
+        strength: 80, // mg
+        form: 'Suppository',
+        image: placeholderImg,
+        minWeight: 6, // kg
+        maxWeight: 10, // kg
+        ageRestriction: 'Infants'
+      },
+      {
+        id: 'suppol_child',
+        name: 'Suppol Child',
+        ingredient: 'Paracetamol',
+        strength: 170, // mg
+        form: 'Suppository',
+        image: placeholderImg,
+        minWeight: 7, // kg
+        maxWeight: 20, // kg
+        ageRestriction: 'Children'
+      },
+      {
+        id: 'suppol_250',
+        name: 'Suppol 250',
+        ingredient: 'Paracetamol',
+        strength: 250, // mg
+        form: 'Suppository',
+        image: placeholderImg,
+        minWeight: 20, // kg
+        maxWeight: 40, // kg
+        ageRestriction: 'Older children'
+      }
+    ]
+  }
+}
