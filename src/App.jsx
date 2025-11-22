@@ -903,7 +903,7 @@ function AppEnglish({ onChangeLanguage }) {
                   {/* Step 3: Weight Selection */}
                   {age && (
                     <div className="space-y-2 animate-in slide-in-from-top-2 duration-300">
-                      <label className="text-sm font-medium">Child's Weight (kg)</label>
+                      <label className="text-sm font-medium">बच्चे का वजन (किलो)</label>
                       <Select value={weight} onValueChange={setWeight}>
                         <SelectTrigger className="text-lg">
                           <SelectValue placeholder="वजन चुनें" />
@@ -1131,7 +1131,7 @@ function AppEnglish({ onChangeLanguage }) {
                             </p>
                           )}
                           <p><strong>Medication:</strong> {result.medication.name}</p>
-                          <p><strong>Child's Weight:</strong> {result.weight} kg</p>
+                          <p><strong>बच्चे का वजन:</strong> {result.weight} किलो</p>
                           <p><strong>Frequency:</strong> {result.frequency}</p>
                           <p><strong>Maximum Daily:</strong> {result.maxDailyDoses} doses</p>
                           {/* NSAIDs Warning for Ibuprofen and Diclofenac */}
