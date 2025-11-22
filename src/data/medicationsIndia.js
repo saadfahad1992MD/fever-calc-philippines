@@ -9,7 +9,7 @@ export const medicationsIndia = {
     {
       id: 'crocin_drops',
       name: 'क्रोसिन बेबी ड्रॉप्स',
-      ingredient: 'पैरासिटामोल',
+      ingredient: 'Paracetamol',
       concentration: 100, // mg per 1ml
       volume: 1, // ml
       form: 'ड्रॉप्स',
@@ -19,7 +19,7 @@ export const medicationsIndia = {
     {
       id: 'crocin_120',
       name: 'क्रोसिन 120 सस्पेंशन',
-      ingredient: 'पैरासिटामोल',
+      ingredient: 'Paracetamol',
       concentration: 120, // mg per 5ml
       volume: 5, // ml
       form: 'सिरप',
@@ -29,7 +29,7 @@ export const medicationsIndia = {
     {
       id: 'crocin_240',
       name: 'क्रोसिन 240 सस्पेंशन',
-      ingredient: 'पैरासिटामोल',
+      ingredient: 'Paracetamol',
       concentration: 240, // mg per 5ml
       volume: 5, // ml
       form: 'سيرप',
@@ -39,7 +39,7 @@ export const medicationsIndia = {
     {
       id: 'calpol_250',
       name: 'कैलपोल 250 सस्पेंशन',
-      ingredient: 'पैरासिटामोल',
+      ingredient: 'Paracetamol',
       concentration: 250, // mg per 5ml
       volume: 5, // ml
       form: 'सिरप',
@@ -49,7 +49,7 @@ export const medicationsIndia = {
     {
       id: 'dolo_syrup',
       name: 'डोलो सिरप',
-      ingredient: 'पैरासिटामोल',
+      ingredient: 'Paracetamol',
       concentration: 250, // mg per 5ml
       volume: 5, // ml
       form: 'सिरप',
@@ -61,7 +61,7 @@ export const medicationsIndia = {
     {
       id: 'ibugesic_syrup',
       name: 'इबुजेसिक सिरप',
-      ingredient: 'आइबूप्रोफेन',
+      ingredient: 'Ibuprofen',
       concentration: 100, // mg per 5ml
       volume: 5, // ml
       form: 'सिरप',
@@ -71,7 +71,7 @@ export const medicationsIndia = {
     {
       id: 'brufen_junior',
       name: 'ब्रूफेन जूनियर सस्पेंशन',
-      ingredient: 'आइबूप्रोफेन',
+      ingredient: 'Ibuprofen',
       concentration: 100, // mg per 5ml
       volume: 5, // ml
       form: 'सिरप',
@@ -83,7 +83,7 @@ export const medicationsIndia = {
     {
       id: 'combiflam_suspension',
       name: 'कॉम्बिफ्लेम सस्पेंशन',
-      ingredient: 'आइबूप्रोफेन + पैरासिटामोल',
+      ingredient: 'Ibuprofen + Paracetamol',
       concentration: 100, // mg Ibuprofen per 5ml
       concentration2: 162.5, // mg Paracetamol per 5ml
       volume: 5, // ml
@@ -95,7 +95,7 @@ export const medicationsIndia = {
     {
       id: 'ibugesic_plus',
       name: 'इबुजेसिक प्लस सिरप',
-      ingredient: 'आइबूप्रोफेन + पैरासिटामोल',
+      ingredient: 'Ibuprofen + Paracetamol',
       concentration: 100, // mg Ibuprofen per 5ml
       concentration2: 162.5, // mg Paracetamol per 5ml
       volume: 5, // ml
@@ -107,7 +107,7 @@ export const medicationsIndia = {
     {
       id: 'brufen_p_junior',
       name: 'ब्रुफेन पी जूनियर',
-      ingredient: 'आइबूप्रोफेन + पैरासिटामोल',
+      ingredient: 'Ibuprofen + Paracetamol',
       concentration: 100, // mg Ibuprofen per 5ml
       concentration2: 162.5, // mg Paracetamol per 5ml
       volume: 5, // ml
@@ -122,7 +122,7 @@ export const medicationsIndia = {
       {
         id: 'suppol_baby',
         name: 'सपोल बेबी',
-        ingredient: 'पैरासिटामोल',
+        ingredient: 'Paracetamol',
         strength: 80, // mg
         form: 'सपोजिटरी',
         image: placeholderImg,
@@ -133,7 +133,7 @@ export const medicationsIndia = {
       {
         id: 'suppol_child',
         name: 'सपोल चाइल्ड',
-        ingredient: 'पैरासिटामोल',
+        ingredient: 'Paracetamol',
         strength: 170, // mg
         form: 'सपोजिटरी',
         image: placeholderImg,
@@ -144,7 +144,7 @@ export const medicationsIndia = {
       {
         id: 'suppol_250',
         name: 'सपोल 250',
-        ingredient: 'पैरासिटामोल',
+        ingredient: 'Paracetamol',
         strength: 250, // mg
         form: 'सपोजिटरी',
         image: placeholderImg,
