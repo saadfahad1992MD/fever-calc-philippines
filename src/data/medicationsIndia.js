@@ -123,35 +123,33 @@ export const medicationsIndia = {
         id: 'suppol_baby',
         name: 'सपोल बेबी',
         ingredient: 'Paracetamol',
-        strength: 80, // mg
-        form: 'सपोजिटरी',
+        concentration: 80, // mg
+        form: 'suppository',
         image: placeholderImg,
-        minWeight: 6, // kg
-        maxWeight: 10, // kg
+        weightRange: '6-10 kg',
         ageRestriction: 'शिशुओं के लिए'
       },
       {
         id: 'suppol_child',
         name: 'सपोल चाइल्ड',
         ingredient: 'Paracetamol',
-        strength: 170, // mg
-        form: 'सपोजिटरी',
+        concentration: 170, // mg
+        form: 'suppository',
         image: placeholderImg,
-        minWeight: 7, // kg
-        maxWeight: 20, // kg
+        weightRange: '7-20 kg',
         ageRestriction: 'बच्चों के लिए'
       },
       {
         id: 'suppol_250',
         name: 'सपोल 250',
         ingredient: 'Paracetamol',
-        strength: 250, // mg
-        form: 'सपोजिटरी',
+        concentration: 250, // mg
+        form: 'suppository',
         image: placeholderImg,
-        minWeight: 20, // kg
-        maxWeight: 40, // kg
+        weightRange: '20-40 kg',
         ageRestriction: 'बड़े बच्चों के लिए'
       }
-    ]
+    ],
+    diclofenac: []
   }
 }

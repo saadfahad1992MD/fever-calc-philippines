@@ -122,35 +122,33 @@ export const medicationsIndiaEnglish = {
         id: 'suppol_baby',
         name: 'Suppol Baby',
         ingredient: 'Paracetamol',
-        strength: 80, // mg
-        form: 'Suppository',
+        concentration: 80, // mg
+        form: 'suppository',
         image: placeholderImg,
-        minWeight: 6, // kg
-        maxWeight: 10, // kg
+        weightRange: '6-10 kg',
         ageRestriction: 'Infants'
       },
       {
         id: 'suppol_child',
         name: 'Suppol Child',
         ingredient: 'Paracetamol',
-        strength: 170, // mg
-        form: 'Suppository',
+        concentration: 170, // mg
+        form: 'suppository',
         image: placeholderImg,
-        minWeight: 7, // kg
-        maxWeight: 20, // kg
+        weightRange: '7-20 kg',
         ageRestriction: 'Children'
       },
       {
         id: 'suppol_250',
         name: 'Suppol 250',
         ingredient: 'Paracetamol',
-        strength: 250, // mg
-        form: 'Suppository',
+        concentration: 250, // mg
+        form: 'suppository',
         image: placeholderImg,
-        minWeight: 20, // kg
-        maxWeight: 40, // kg
+        weightRange: '20-40 kg',
         ageRestriction: 'Older children'
       }
-    ]
+    ],
+    diclofenac: []
   }
 }

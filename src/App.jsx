@@ -310,6 +310,7 @@ const suppositories = {
 
 // Use Indian medications database (Hindi)
 const medications = medicationsIndia;
+const suppositories = medicationsIndia.suppositories;
 
 function AppEnglish({ onChangeLanguage }) {
   const [weight, setWeight] = useState('') // String for text input
