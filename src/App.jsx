@@ -1138,7 +1138,7 @@ function AppEnglish({ onChangeLanguage }) {
                           {(result.medication.ingredient === 'Ibuprofen' || result.medication.ingredient === 'Diclofenac') && (
                             <div className="mt-2 p-2 bg-orange-50 border border-orange-200 rounded-lg">
                               <p className="text-orange-800 text-sm font-medium">
-                                Do not combine ibuprofen syrup and diclofenac suppositories at the same time; leave 8 hours between them
+                                आइबूप्रोफेन सिरप और डाइक्लोफेनाक सपोजिटरी को एक साथ न मिलाएं; उनके बीच 8 घंटे का अंतर रखें
                               </p>
                             </div>
                           )}
