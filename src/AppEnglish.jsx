@@ -10,6 +10,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion.jsx'
 import { AlertTriangle, Calculator, Info, X, ZoomIn, Pill, Flame, Shield, Clock, Users, CheckCircle, Linkedin } from 'lucide-react'
 import { LanguageToggle } from './components/LanguageToggle.jsx'
+import { ShareModalEnglish } from './components/ShareModalEnglish.jsx'
 import linkedinLogo from './assets/linkedin-logo.png'
 import { medicationsIndiaEnglish } from './data/medicationsIndiaEnglish.js'
 import './App.css'
@@ -321,6 +322,7 @@ function AppEnglish({ onChangeLanguage }) {
   const [enlargedImage, setEnlargedImage] = useState(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [medicationType, setMedicationType] = useState('syrup') // 'syrup' or 'suppository'
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false)
 
   // Function to convert Arabic numerals to English numerals
   const convertArabicToEnglish = (str) => {
@@ -749,8 +751,20 @@ function AppEnglish({ onChangeLanguage }) {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <LanguageToggle currentLanguage="en" onToggle={onChangeLanguage} />
       {/* Top Brand Header */}
-      <div className="sticky top-0 bg-white text-gray-800 py-6 shadow-lg border-b-2 border-gray-100 z-40">
-        <div className="max-w-4xl mx-auto px-4">
+      <div className="sticky top-0 bg-white text-gray-800 pt-12 pb-6 sm:pt-6 shadow-lg border-b-2 border-gray-100 z-40">
+        <div className="max-w-4xl mx-auto px-4 relative">
+          {/* Share Button - Fixed position on mobile to align with language toggle */}
+          <button
+            onClick={() => setIsShareModalOpen(true)}
+            className="absolute left-1 top-1 sm:relative sm:left-auto sm:top-auto flex items-center gap-2 px-3 py-2 sm:px-4 bg-pink-600 hover:bg-pink-700 text-white rounded-lg transition-colors duration-200 shadow-md"
+            title="Share"
+          >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M3 11h8V3H3v8zm2-6h4v4H5V5zm8-2v8h8V3h-8zm6 6h-4V5h4v4zM3 21h8v-8H3v8zm2-6h4v4H5v-4zm13-2h-2v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/>
+              </svg>
+              <span className="text-sm sm:text-base">Share</span>
+          </button>
+          
           <div className="flex items-center justify-center gap-4">
             {/* Icon Container */}
             <div className="bg-red-100 rounded-2xl p-3 shadow-md border border-red-200">
@@ -1743,6 +1757,9 @@ function AppEnglish({ onChangeLanguage }) {
           </div>
         </div>
       </footer>
+      
+      {/* Share Modal */}
+      <ShareModalEnglish isOpen={isShareModalOpen} onClose={() => setIsShareModalOpen(false)} />
     </div>
   )
 }
