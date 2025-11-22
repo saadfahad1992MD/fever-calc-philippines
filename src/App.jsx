@@ -1086,7 +1086,7 @@ function AppEnglish({ onChangeLanguage }) {
                   variant="outline"
                   className="px-8 py-3 text-lg"
                 >
-                  Reset
+                  रीसेट करें
                 </Button>
               </div>
             )}
@@ -1097,7 +1097,7 @@ function AppEnglish({ onChangeLanguage }) {
                   variant="outline"
                   className="px-8 py-3 text-lg"
                 >
-                  Reset
+                  रीसेट करें
                 </Button>
               </div>
             )}
@@ -1119,21 +1119,21 @@ function AppEnglish({ onChangeLanguage }) {
                   ) : (
                     <div className="space-y-4">
                       <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                        <h3 className="font-semibold text-green-800 mb-2">Calculated Dose:</h3>
+                        <h3 className="font-semibold text-green-800 mb-2">गणना की गई खुराक:</h3>
                         <div className="grid gap-2 text-sm">
                           {result.isSuppository ? (
                             <p className="text-lg font-bold text-green-700">
-                              <strong>Number of Suppositories:</strong> {result.suppositories} suppository
+                              <strong>सपोजिटरी की संख्या:</strong> {result.suppositories} सपोजिटरी
                             </p>
                           ) : (
                             <p className="text-lg font-bold text-green-700">
-                              <strong>Required Amount:</strong> {result.volume} ml
+                              <strong>आवश्यक मात्रा:</strong> {result.volume} ml
                             </p>
                           )}
-                          <p><strong>Medication:</strong> {result.medication.name}</p>
+                          <p><strong>दवा:</strong> {result.medication.name}</p>
                           <p><strong>बच्चे का वजन:</strong> {result.weight} किलो</p>
-                          <p><strong>Frequency:</strong> {result.frequency}</p>
-                          <p><strong>Maximum Daily:</strong> {result.maxDailyDoses} doses</p>
+                          <p><strong>आवृत्ति:</strong> हर 4-6 घंटे</p>
+                          <p><strong>अधिकतम दैनिक:</strong> {result.maxDailyDoses} खुराक</p>
                           {/* NSAIDs Warning for Ibuprofen and Diclofenac */}
                           {(result.medication.ingredient === 'Ibuprofen' || result.medication.ingredient === 'Diclofenac') && (
                             <div className="mt-2 p-2 bg-orange-50 border border-orange-200 rounded-lg">
@@ -1179,7 +1179,7 @@ function AppEnglish({ onChangeLanguage }) {
                           }}
                           className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-lg shadow-md transition-colors duration-200">
                           <Info className="h-4 w-4 ml-2" />
-                          For FAQs and additional explanation, click here
+                          अक्सर पूछे जाने वाले प्रश्न और अतिरिक्त जानकारी के लिए यहां क्लिक करें
                         </Button>
                       </div>
                       
@@ -1188,9 +1188,9 @@ function AppEnglish({ onChangeLanguage }) {
                         <Alert className="bg-orange-50 border-orange-200">
                           <AlertTriangle className="h-4 w-4 text-orange-600" />
                           <AlertDescription className="text-orange-800">
-                            <strong>Important Warning:</strong>
+                            <strong>महत्वपूर्ण चेतावनी:</strong>
                             <ul className="list-disc mt-2 space-y-1" style={{listStylePosition: 'inside', direction: 'ltr', paddingLeft: '1.5rem'}}>
-                              <li>This calculator is for guidance only. Always consult a doctor before giving any medication to your child. Do not exceed the recommended dose and do not give medication for more than 3-5 days without medical consultation.</li>
+                              <li>यह कैलकुलेटर केवल मार्गदर्शन के लिए है। अपने बच्चे को कोई भी दवा देने से पहले हमेशा डॉक्टर से परामर्श लें। सुझाई गई खुराक से अधिक न दें और चिकित्सकीय परामर्श के बिना 3-5 दिनों से अधिक समय तक दवा न दें।</li>
                               {(() => {
                                 const ageValue = convertArabicToEnglish(age)
                                 const ageNum = parseFloat(ageValue)
