@@ -150,6 +150,27 @@ export const medicationsIndia = {
         ageRestriction: 'बड़े बच्चों के लिए'
       }
     ],
-    diclofenac: []
+    diclofenac: [
+      {
+        id: 'jonac_12_5',
+        name: 'जोनाक 12.5',
+        ingredient: 'Diclofenac',
+        concentration: 12.5, // mg
+        form: 'suppository',
+        image: '/medications/jonac_12_5.jpg',
+        weightRange: '10-15 kg',
+        ageRestriction: '1 साल से अधिक बच्चों के लिए'
+      },
+      {
+        id: 'jonac_25',
+        name: 'जोनाक 25',
+        ingredient: 'Diclofenac',
+        concentration: 25, // mg
+        form: 'suppository',
+        image: '/medications/jonac_25.jpg',
+        weightRange: '15-20 kg',
+        ageRestriction: 'बड़े बच्चों के लिए'
+      }
+    ]
   }
 }
