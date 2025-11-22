@@ -67,6 +67,16 @@ export const medicationsIndia = {
       form: 'सिरप',
       image: '/medications/ibugesic_syrup.jpg',
       ageRestriction: '6 महीने और उससे अधिक'
+    },
+    {
+      id: 'brufen_junior',
+      name: 'ब्रूफेन जूनियर सस्पेंशन',
+      ingredient: 'आइबूप्रोफेन',
+      concentration: 100, // mg per 5ml
+      volume: 5, // ml
+      form: 'सिरप',
+      image: '/medications/brufen_junior.webp',
+      ageRestriction: '6 महीने और उससे अधिक'
     }
   ],
   combination: [

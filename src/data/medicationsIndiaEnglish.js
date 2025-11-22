@@ -66,6 +66,16 @@ export const medicationsIndiaEnglish = {
       form: 'Syrup',
       image: '/medications/ibugesic_syrup.jpg',
       ageRestriction: '6 months and above'
+    },
+    {
+      id: 'brufen_junior',
+      name: 'Brufen Junior Suspension',
+      ingredient: 'Ibuprofen',
+      concentration: 100, // mg per 5ml
+      volume: 5, // ml
+      form: 'Syrup',
+      image: '/medications/brufen_junior.webp',
+      ageRestriction: '6 months and above'
     }
   ],
   combination: [
