@@ -1033,7 +1033,7 @@ function AppEnglish({ onChangeLanguage }) {
                   <div>
                     <div className="flex items-center gap-2 mb-4">
                       <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-                      <h3 className="text-lg font-semibold text-blue-700">Paracetamol Suppositories</h3>
+                      <h3 className="text-lg font-semibold text-blue-700">पैरासिटामोल सपोजिटरी</h3>
                     </div>
                     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                       {suppositories.paracetamol.map(med => (
@@ -1046,9 +1046,9 @@ function AppEnglish({ onChangeLanguage }) {
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-4 h-4 bg-green-500 rounded-full"></div>
-                      <h3 className="text-lg font-semibold text-green-700">Diclofenac Suppositories</h3>
+                      <h3 className="text-lg font-semibold text-green-700">डाइक्लोफेनाक सपोजिटरी</h3>
                       <Badge variant="outline" className="text-green-600">
-                        For children over 1 year
+                        1 साल से अधिक बच्चों के लिए
                       </Badge>
                     </div>
                     
