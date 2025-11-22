@@ -791,11 +791,11 @@ function AppEnglish({ onChangeLanguage }) {
           <TabsList className="grid w-full grid-cols-2 mb-6">
             <TabsTrigger value="calculator" className="flex items-center gap-2">
               <Calculator className="w-4 h-4" />
-              Calculator
+              कैलकुलेटर
             </TabsTrigger>
             <TabsTrigger value="info" className="flex items-center gap-2">
               <Info className="w-4 h-4" />
-              Medical Information
+              चिकित्सा जानकारी
             </TabsTrigger>
           </TabsList>
 
@@ -805,10 +805,10 @@ function AppEnglish({ onChangeLanguage }) {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Calculator className="w-5 h-5" />
-                  Child Information
+                  बच्चे की जानकारी
                 </CardTitle>
                 <CardDescription>
-                  Enter child's age and weight
+                  बच्चे की उम्र और वजन दर्ज करें
                 </CardDescription>
               </CardHeader>
               <CardContent>
