@@ -135,7 +135,7 @@ export const medicationsIndiaEnglish = {
         concentration: 170, // mg
         form: 'suppository',
         image: '/medications/suppol_child.jpg',
-        weightRange: '7-20 kg',
+        weightRange: '11-15 kg',
         ageRestriction: 'Children'
       },
       {
@@ -145,7 +145,7 @@ export const medicationsIndiaEnglish = {
         concentration: 250, // mg
         form: 'suppository',
         image: '/medications/suppol_250.jpg',
-        weightRange: '20-40 kg',
+        weightRange: '16-25 kg',
         ageRestriction: 'Older children'
       }
     ],
