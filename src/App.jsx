@@ -1495,14 +1495,14 @@ function AppEnglish({ onChangeLanguage }) {
                             <span className="text-blue-600 font-bold text-xs md:text-sm">1</span>
                           </div>
                           <span className="text-blue-800 font-semibold text-sm md:text-lg">
-                            What is the difference between paracetamol medications and (ibuprofen and diclofenac) medications?
+                            पैरासिटामोल दवाओं और (आइबूप्रोफेन और डाइक्लोफेनाक) दवाओं के बीच क्या अंतर है?
                           </span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent>
                         <div className="bg-blue-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <p className="text-blue-800 text-sm md:text-base">
-                            Both are fever reducers and pain relievers. However, (ibuprofen and diclofenac) are considered stronger in reducing fever and pain than the paracetamol family.
+                            दोनों बुखार कम करने वाली और दर्द निवारक दवाएं हैं। हालांकि, (आइबूप्रोफेन और डाइक्लोफेनाक) को पैरासिटामोल परिवार की तुलना में बुखार और दर्द को कम करने में अधिक मजबूत माना जाता है।
                           </p>
                         </div>
                       </AccordionContent>
@@ -1516,14 +1516,14 @@ function AppEnglish({ onChangeLanguage }) {
                             <span className="text-green-600 font-bold text-sm">2</span>
                           </div>
                           <span className="text-green-800 font-semibold text-sm md:text-lg">
-                            Is there an interaction between paracetamol and (ibuprofen and diclofenac) medications?
+                            क्या पैरासिटामोल और (आइबूप्रोफेन और डाइक्लोफेनाक) दवाओं के बीच कोई प्रतिक्रिया है?
                           </span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent>
                         <div className="bg-green-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <p className="text-green-800">
-                            There is no interaction between them, and they can be taken at the same time, but your doctor may recommend a specific time between them, such as every 4 hours between paracetamol and ibuprofen, so you can give medications throughout the day.
+                            उनके बीच कोई प्रतिक्रिया नहीं है, और उन्हें एक ही समय में लिया जा सकता है, लेकिन आपका डॉक्टर उनके बीच एक विशिष्ट समय की सिफारिश कर सकता है, जैसे कि पैरासिटामोल और आइबूप्रोफेन के बीच हर 4 घंटे, ताकि आप पूरे दिन दवाएं दे सकें।
                           </p>
                         </div>
                       </AccordionContent>
@@ -1537,7 +1537,7 @@ function AppEnglish({ onChangeLanguage }) {
                             <span className="text-orange-600 font-bold text-sm">3</span>
                           </div>
                           <span className="text-orange-800 font-semibold text-sm md:text-lg">
-                            Which medications should not be combined at the same time?
+                            कौन सी दवाओं को एक ही समय में नहीं मिलाना चाहिए?
                           </span>
                         </div>
                       </AccordionTrigger>
@@ -1545,10 +1545,10 @@ function AppEnglish({ onChangeLanguage }) {
                         <div className="bg-orange-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <div className="text-orange-800 space-y-2">
                             <p>
-                              <strong className="text-red-600">Do not combine medications containing Paracetamol</strong> at the same time - there must be 4-6 hours between them.
+                              <strong className="text-red-600">पैरासिटामोल युक्त दवाओं को एक साथ न मिलाएं</strong> - उनके बीच 4-6 घंटे का अंतर होना चाहिए।
                             </p>
                             <p>
-                              <strong className="text-red-600">And do not combine medications containing Ibuprofen (Brufen) or Diclofenac</strong> at the same time - there must be 8 hours between them.
+                              <strong className="text-red-600">और आइबूप्रोफेन (ब्रूफेन) या डाइक्लोफेनाक युक्त दवाओं को एक साथ न मिलाएं</strong> - उनके बीच 8 घंटे का अंतर होना चाहिए।
                             </p>
                           </div>
                         </div>
@@ -1563,7 +1563,7 @@ function AppEnglish({ onChangeLanguage }) {
                             <span className="text-teal-600 font-bold text-sm">4</span>
                           </div>
                           <span className="text-teal-800 font-semibold text-sm md:text-lg">
-                            Should medications be taken after eating or on an empty stomach?
+                            क्या दवाएं खाने के बाद या खाली पेट लेनी चाहिए?
                           </span>
                         </div>
                       </AccordionTrigger>
@@ -1571,10 +1571,10 @@ function AppEnglish({ onChangeLanguage }) {
                         <div className="bg-teal-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <div className="text-teal-800 space-y-2">
                             <p>
-                              <strong className="text-blue-600">पैरासिटामोल दवाएं</strong> can be taken on an empty stomach.
+                              <strong className="text-blue-600">पैरासिटामोल दवाएं</strong> खाली पेट ली जा सकती हैं।
                             </p>
                             <p>
-                              <strong className="text-red-600">Ibuprofen (Brufen) medications</strong> are preferably taken after food or a light meal.
+                              <strong className="text-red-600">आइबूप्रोफेन (ब्रूफेन) दवाएं</strong> अधिमानतः भोजन या हल्के भोजन के बाद ली जाती हैं।
                             </p>
                           </div>
                         </div>
@@ -1590,13 +1590,13 @@ function AppEnglish({ onChangeLanguage }) {
               <Alert className="bg-red-50 border-red-200">
                 <AlertTriangle className="h-4 w-4 text-red-600" />
                 <AlertDescription className="text-red-800">
-                  <strong className="block mb-2">Important Safety Warnings:</strong>
+                  <strong className="block mb-2">महत्वपूर्ण सुरक्षा चेतावनियां:</strong>
                   <ul className="list-disc space-y-1 text-sm" style={{listStylePosition: 'inside', direction: 'ltr', paddingLeft: '1.5rem'}}>
-                    <li>Never exceed the recommended dose or allowed frequency</li>
-                    <li>Do not give more than one type of medication containing the same active ingredient</li>
-                    <li>Do not use medication for more than 3-5 days without medical consultation</li>
-                    <li>Ensure there is no allergy to the medication before use</li>
-                    <li>Keep all medications out of reach of children</li>
+                    <li>अनुशंसित खुराक या अनुमत आवृत्ति से कभी अधिक न करें</li>
+                    <li>एक ही सक्रिय घटक युक्त एक से अधिक प्रकार की दवा न दें</li>
+                    <li>चिकित्सा परामर्श के बिना 3-5 दिनों से अधिक समय तक दवा का उपयोग न करें</li>
+                    <li>उपयोग से पहले सुनिश्चित करें कि दवा से कोई एलर्जी नहीं है</li>
+                    <li>सभी दवाओं को बच्चों की पहुंच से दूर रखें</li>
                   </ul>
                 </AlertDescription>
               </Alert>
