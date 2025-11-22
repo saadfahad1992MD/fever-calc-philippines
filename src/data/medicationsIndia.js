@@ -125,7 +125,7 @@ export const medicationsIndia = {
         ingredient: 'Paracetamol',
         concentration: 80, // mg
         form: 'suppository',
-        image: placeholderImg,
+        image: '/medications/suppol_baby.jpg',
         weightRange: '6-10 kg',
         ageRestriction: 'शिशुओं के लिए'
       },
@@ -135,7 +135,7 @@ export const medicationsIndia = {
         ingredient: 'Paracetamol',
         concentration: 170, // mg
         form: 'suppository',
-        image: placeholderImg,
+        image: '/medications/suppol_child.jpg',
         weightRange: '7-20 kg',
         ageRestriction: 'बच्चों के लिए'
       },
@@ -145,7 +145,7 @@ export const medicationsIndia = {
         ingredient: 'Paracetamol',
         concentration: 250, // mg
         form: 'suppository',
-        image: placeholderImg,
+        image: '/medications/suppol_250.jpg',
         weightRange: '20-40 kg',
         ageRestriction: 'बड़े बच्चों के लिए'
       }
