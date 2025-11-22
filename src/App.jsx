@@ -653,7 +653,7 @@ function AppEnglish({ onChangeLanguage }) {
             <h3 className="font-semibold text-lg">{medication.name}</h3>
             <p className="text-sm text-gray-600">{medication.ingredient}</p>
             <div className="text-sm text-gray-500">
-              <span>Concentration: </span>
+              <span>सांद्रता: </span>
               <span className="font-bold text-blue-600" dir="ltr">
                 {medication.form === 'suppository' 
                   ? `${medication.concentration}mg`
@@ -976,7 +976,7 @@ function AppEnglish({ onChangeLanguage }) {
                     {/* Note about same concentration */}
                     <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
                       <p className="text-sm text-blue-800 leading-relaxed">
-                        If you have a Paracetamol medication and didn't find it in the images above, you can select the medication with the same concentration and you will get the same required dose. For example, concentration 
+                        यदि आपके पास पैरासिटामोल दवा है और आपको उपरोक्त चित्रों में नहीं मिली, तो आप उसी सांद्रता वाली दवा का चयन कर सकते हैं और आपको वही आवश्यक खुराक मिलेगी। उदाहरण के लिए, सांद्रता 
                         {' '}
                         <span className="font-bold text-blue-600" dir="ltr">120mg/5ml</span>
                       </p>
@@ -989,14 +989,14 @@ function AppEnglish({ onChangeLanguage }) {
                       <div className="w-4 h-4 bg-green-500 rounded-full"></div>
                       <h3 className="text-lg font-semibold text-green-700">आइबूप्रोफेन दवाएं</h3>
                       <Badge variant="outline" className="text-green-600">
-                        Age over 6 months
+                        6 महीने से अधिक उम्र
                       </Badge>
                     </div>
                     
                     {/* Additional Information */}
                     <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg">
                       <p className="text-sm text-green-800 leading-relaxed">
-                        For fever or pain that doesn't respond to paracetamol, your doctor may recommend a stronger fever reducer or pain reliever such as ibuprofen, alternating with paracetamol every 4 hours if necessary
+                        बुखार या दर्द के लिए जो पैरासिटामोल से ठीक नहीं होता, आपका डॉक्टर एक मजबूत बुखार कम करने वाली या दर्द निवारक दवा जैसे आइबूप्रोफेन की सिफारिश कर सकता है, जिसे जरूरत पड़ने पर हर 4 घंटे में पैरासिटामोल के साथ बदलते हुए दिया जा सकता है
                       </p>
                       <p className="text-sm text-green-700 font-medium mt-2">
                         <strong>नोट:</strong> आइबूप्रोफेन पैरासिटामोल के साथ कोई विरोध नहीं करता और एक साथ दिया जा सकता है
@@ -1040,10 +1040,10 @@ function AppEnglish({ onChangeLanguage }) {
                     {/* Additional Information */}
                     <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg">
                       <p className="text-sm text-green-800 leading-relaxed">
-                        For fever or pain that doesn't respond to paracetamol, your doctor may recommend a stronger fever reducer or pain reliever such as diclofenac suppositories
+                        बुखार या दर्द के लिए जो पैरासिटामोल से ठीक नहीं होता, आपका डॉक्टर डाइक्लोफेनाक सपोजिटरी जैसी मजबूत बुखार कम करने वाली या दर्द निवारक दवा की सिफारिश कर सकता है
                       </p>
                       <p className="text-sm text-green-700 font-medium mt-2">
-                        <strong>नोट:</strong> Diclofenac suppositories do not interact with paracetamol, but they belong to the same family as ibuprofen syrup. Do not take them at the same time and leave 8 hours between them
+                        <strong>नोट:</strong> डाइक्लोफेनाक सपोजिटरी पैरासिटामोल के साथ प्रतिक्रिया नहीं करती, लेकिन यह आइबूप्रोफेन सिरप के समान परिवार से संबंधित है। इन्हें एक साथ न लें और उनके बीच 8 घंटे का अंतर रखें
                       </p>
                     </div>
                     
@@ -1236,7 +1236,7 @@ function AppEnglish({ onChangeLanguage }) {
                           {/* Note about same concentration */}
                           <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
                             <p className="text-sm text-blue-800 leading-relaxed">
-                              If you have a Paracetamol medication and didn't find it in the images, you can select the medication with the same concentration and you will get the same required dose. For example, concentration 
+                              यदि आपके पास पैरासिटामोल दवा है और आपको चित्रों में नहीं मिली, तो आप उसी सांद्रता वाली दवा का चयन कर सकते हैं और आपको वही आवश्यक खुराक मिलेगी। उदाहरण के लिए, सांद्रता 
                               {' '}
                               <span className="font-bold text-blue-600" dir="ltr">120mg/5ml</span>
                             </p>
