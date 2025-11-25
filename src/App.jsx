@@ -12,7 +12,7 @@ import { AlertTriangle, Calculator, Info, X, ZoomIn, Pill, Flame, Shield, Clock,
 import { LanguageToggle } from './components/LanguageToggle.jsx'
 import { ShareModal } from './components/ShareModal.jsx'
 import linkedinLogo from './assets/linkedin-logo.png'
-import { medicationsIndia } from './data/medicationsIndia.js'
+import { medicationsPhilippines } from './data/medicationsPhilippines.js'
 import './App.css'
 
 // Import medication images
@@ -308,9 +308,9 @@ const suppositories = {
 
 */
 
-// Use Indian medications database (Hindi)
-const medications = medicationsIndia;
-const suppositories = medicationsIndia.suppositories;
+// Use Philippines medications database (Tagalog)
+const medications = { paracetamol: medicationsPhilippines.paracetamol, ibuprofen: medicationsPhilippines.ibuprofen };
+const suppositories = medicationsPhilippines.suppositories;
 
 function AppEnglish({ onChangeLanguage }) {
   const [weight, setWeight] = useState('') // String for text input
@@ -649,14 +649,14 @@ function AppEnglish({ onChangeLanguage }) {
               title="Click to Enlarge"
             >
               <ZoomIn className="w-3 h-3" />
-              <span>बड़ा करें</span>
+              <span>Palakihin</span>
             </button>
           </div>
           <div className="flex-1">
             <h3 className="font-semibold text-lg">{medication.name}</h3>
             <p className="text-sm text-gray-600">{medication.ingredient}</p>
             <div className="text-sm text-gray-500">
-              <span>सांद्रता: </span>
+              <span>Konsentrasyon: </span>
               <span className="font-bold text-blue-600" dir="ltr">
                 {medication.form === 'suppository' 
                   ? `${medication.concentration}mg`
@@ -738,7 +738,7 @@ function AppEnglish({ onChangeLanguage }) {
               }}
               className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors duration-200"
             >
-              <span>खुराक की गणना करें</span>
+              <span>Dosis की गणना करें</span>
               <span>💊</span>
             </button>
           </div>
@@ -750,7 +750,7 @@ function AppEnglish({ onChangeLanguage }) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <LanguageToggle currentLanguage="hi" onToggle={onChangeLanguage} />
+      <LanguageToggle currentLanguage="tl" targetLanguage="en" onToggle={onChangeLanguage} />
       {/* Top Brand Header */}
       <div className="sticky top-0 bg-white text-gray-800 pt-12 pb-6 sm:pt-6 shadow-lg border-b-2 border-gray-100 z-40">
         <div className="max-w-4xl mx-auto px-4 relative">
@@ -758,12 +758,12 @@ function AppEnglish({ onChangeLanguage }) {
           <button
             onClick={() => setIsShareModalOpen(true)}
             className="absolute left-1 top-1 sm:relative sm:left-auto sm:top-auto flex items-center gap-2 px-3 py-2 sm:px-4 bg-pink-600 hover:bg-pink-700 text-white rounded-lg transition-colors duration-200 shadow-md"
-            title="शेयर करें"
+            title="Ibahagi"
           >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M3 11h8V3H3v8zm2-6h4v4H5V5zm8-2v8h8V3h-8zm6 6h-4V5h4v4zM3 21h8v-8H3v8zm2-6h4v4H5v-4zm13-2h-2v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/>
               </svg>
-              <span className="text-sm sm:text-base">शेयर करें</span>
+              <span className="text-sm sm:text-base">Ibahagi</span>
           </button>
           
           <div className="flex items-center justify-center gap-4">
@@ -775,7 +775,7 @@ function AppEnglish({ onChangeLanguage }) {
             {/* Text Container */}
             <div className="text-center">
               <h1 className="font-bold text-3xl tracking-wide">
-                <span className="text-red-600 text-4xl">फीवर कैल्क</span>
+                <span className="text-red-600 text-4xl">Kalkulador ng Lagnat</span>
               </h1>
             </div>
           </div>
@@ -788,11 +788,11 @@ function AppEnglish({ onChangeLanguage }) {
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
               <h1 className="text-2xl font-bold text-gray-900">
-                बच्चों के लिए बुखार की दवा और दर्द निवारक खुराक कैलकुलेटर
+                Kalkulador ng Dosis ng Pampaibaba ng Lagnat at Pang-aliw ng Sakit para sa mga Bata
               </h1>
             </div>
             <p className="text-gray-600 mb-3">
-              वजन और दवा के प्रकार के आधार पर अपने बच्चे के लिए सही खुराक की गणना करें
+              Kalkulahin ang tamang dosis para sa iyong anak batay sa timbang at uri ng gamot
             </p>
           </div>
         </div>
@@ -806,11 +806,11 @@ function AppEnglish({ onChangeLanguage }) {
           <TabsList className="grid w-full grid-cols-2 mb-6">
             <TabsTrigger value="calculator" className="flex items-center gap-2">
               <Calculator className="w-4 h-4" />
-              कैलकुलेटर
+              Kalkulador
             </TabsTrigger>
             <TabsTrigger value="info" className="flex items-center gap-2">
               <Info className="w-4 h-4" />
-              चिकित्सा जानकारी
+              Medikal na Impormasyon
             </TabsTrigger>
           </TabsList>
 
@@ -820,10 +820,10 @@ function AppEnglish({ onChangeLanguage }) {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Calculator className="w-5 h-5" />
-                  बच्चे की जानकारी
+                  Impormasyon ng Bata
                 </CardTitle>
                 <CardDescription>
-                  बच्चे की उम्र और वजन दर्ज करें
+                  Ilagay ang edad at timbang ng bata
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -831,7 +831,7 @@ function AppEnglish({ onChangeLanguage }) {
                   {/* Step 1: Age Category Selection */}
                   <div className="space-y-3">
                     <label className="text-sm font-medium flex items-center gap-1">
-                      आपके बच्चे की उम्र कितनी है?
+                      Ilang taon ang iyong anak?
                       <span className="text-red-500 text-xs">*</span>
                     </label>
                     <div className="grid grid-cols-2 gap-3">
@@ -847,8 +847,8 @@ function AppEnglish({ onChangeLanguage }) {
                       >
                         <div className="text-center">
                           <div className="text-2xl mb-1">👶</div>
-                          <div>1 साल से कम</div>
-                          <div className="text-xs opacity-70">(1-12 महीने)</div>
+                          <div>Wala pang 1 taon</div>
+                          <div className="text-xs opacity-70">(1-12 buwan)</div>
                         </div>
                       </Button>
                       <Button
@@ -863,8 +863,8 @@ function AppEnglish({ onChangeLanguage }) {
                       >
                         <div className="text-center">
                           <div className="text-2xl mb-1">🧒</div>
-                          <div>1 साल से ज्यादा</div>
-                          <div className="text-xs opacity-70">(1-14 साल)</div>
+                          <div>Higit sa 1 taon</div>
+                          <div className="text-xs opacity-70">(1-14 taon)</div>
                         </div>
                       </Button>
                     </div>
@@ -874,11 +874,11 @@ function AppEnglish({ onChangeLanguage }) {
                   {ageCategory && (
                     <div className="space-y-2 animate-in slide-in-from-top-2 duration-300">
                       <label className="text-sm font-medium">
-                        {ageCategory === 'infant' ? 'महीनों में उम्र चुनें' : 'सालों में उम्र चुनें'}
+                        {ageCategory === 'infant' ? 'Pumili ng edad sa buwan' : 'सालों में उम्र चुनें'}
                       </label>
                       <Select value={age} onValueChange={setAge}>
                         <SelectTrigger className="text-lg">
-                          <SelectValue placeholder={ageCategory === 'infant' ? 'महीने चुनें' : 'साल चुनें'} />
+                          <SelectValue placeholder={ageCategory === 'infant' ? 'buwan चुनें' : 'साल चुनें'} />
                         </SelectTrigger>
                         <SelectContent>
                           {ageCategory === 'infant' ? (
@@ -904,7 +904,7 @@ function AppEnglish({ onChangeLanguage }) {
                   {/* Step 3: Weight Selection */}
                   {age && (
                     <div className="space-y-2 animate-in slide-in-from-top-2 duration-300">
-                      <label className="text-sm font-medium">बच्चे का वजन (किलो)</label>
+                      <label className="text-sm font-medium">Timbang ng Bata (kg)</label>
                       <Select value={weight} onValueChange={setWeight}>
                         <SelectTrigger className="text-lg">
                           <SelectValue placeholder="वजन चुनें" />
@@ -951,7 +951,7 @@ function AppEnglish({ onChangeLanguage }) {
             {/* Medication Selection */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <h2 className="text-xl font-semibold">दवा का प्रकार चुनें:</h2>
+                <h2 className="text-xl font-semibold">Pumili ng anyo ng gamot:</h2>
                 
                 {/* Medication Type Selection */}
                 <div className="flex gap-4 justify-center">
@@ -961,16 +961,9 @@ function AppEnglish({ onChangeLanguage }) {
                     className="flex items-center gap-2 px-6 py-3"
                   >
                     <span>💧</span>
-                    <span>सिरप</span>
+                    <span>Syrup</span>
                   </Button>
-                  <Button
-                    variant={medicationType === 'suppository' ? 'default' : 'outline'}
-                    onClick={() => changeMedicationType('suppository')}
-                    className="flex items-center gap-2 px-6 py-3"
-                  >
-                    <span>💊</span>
-                    <span>सपोजिटरी</span>
-                  </Button>
+                  {/* Suppositories not available in Philippines */}
                 </div>
               </div>
 
@@ -980,7 +973,7 @@ function AppEnglish({ onChangeLanguage }) {
                   <div>
                     <div className="flex items-center gap-2 mb-4">
                       <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-                      <h3 className="text-lg font-semibold text-blue-700">पैरासिटामोल दवाएं</h3>
+                      <h3 className="text-lg font-semibold text-blue-700">Mga gamot na Paracetamol</h3>
                     </div>
                     <div className="grid gap-4 md:grid-cols-2">
                       {medications.paracetamol.map(med => (
@@ -991,7 +984,7 @@ function AppEnglish({ onChangeLanguage }) {
                     {/* Note about same concentration */}
                     <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
                       <p className="text-sm text-blue-800 leading-relaxed">
-                        यदि आपके पास पैरासिटामोल दवा है और आपको उपरोक्त चित्रों में नहीं मिली, तो आप उसी सांद्रता वाली दवा का चयन कर सकते हैं और आपको वही आवश्यक खुराक मिलेगी। उदाहरण के लिए, सांद्रता 
+                        यदि आपके पास पैरासिटामोल दवा है और आपको उपरोक्त चित्रों में नहीं मिली, तो आप उसी Konsentrasyon वाली दवा का चयन कर सकते हैं और आपको वही आवश्यक Dosis मिलेगी। उदाहरण के लिए, Konsentrasyon 
                         {' '}
                         <span className="font-bold text-blue-600" dir="ltr">120mg/5ml</span>
                       </p>
@@ -1004,7 +997,7 @@ function AppEnglish({ onChangeLanguage }) {
                       <div className="w-4 h-4 bg-green-500 rounded-full"></div>
                       <h3 className="text-lg font-semibold text-green-700">आइबूप्रोफेन दवाएं</h3>
                       <Badge variant="outline" className="text-green-600">
-                        6 महीने से अधिक उम्र
+                        6 buwan से अधिक उम्र
                       </Badge>
                     </div>
                     
@@ -1014,7 +1007,7 @@ function AppEnglish({ onChangeLanguage }) {
                         बुखार या दर्द के लिए जो पैरासिटामोल से ठीक नहीं होता, आपका डॉक्टर एक मजबूत बुखार कम करने वाली या दर्द निवारक दवा जैसे आइबूप्रोफेन की सिफारिश कर सकता है, जिसे जरूरत पड़ने पर हर 4 घंटे में पैरासिटामोल के साथ बदलते हुए दिया जा सकता है
                       </p>
                       <p className="text-sm text-green-700 font-medium mt-2">
-                        <strong>नोट:</strong> आइबूप्रोफेन पैरासिटामोल के साथ कोई विरोध नहीं करता और एक साथ दिया जा सकता है
+                        <strong>Tandaan:</strong> आइबूप्रोफेन पैरासिटामोल के साथ कोई विरोध नहीं करता और एक साथ दिया जा सकता है
                       </p>
                     </div>
                     
@@ -1033,7 +1026,7 @@ function AppEnglish({ onChangeLanguage }) {
                   <div>
                     <div className="flex items-center gap-2 mb-4">
                       <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-                      <h3 className="text-lg font-semibold text-blue-700">पैरासिटामोल सपोजिटरी</h3>
+                      <h3 className="text-lg font-semibold text-blue-700">पैरासिटामोल Suppository</h3>
                     </div>
                     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                       {suppositories.paracetamol.map(med => (
@@ -1046,7 +1039,7 @@ function AppEnglish({ onChangeLanguage }) {
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-4 h-4 bg-green-500 rounded-full"></div>
-                      <h3 className="text-lg font-semibold text-green-700">डाइक्लोफेनाक सपोजिटरी</h3>
+                      <h3 className="text-lg font-semibold text-green-700">डाइक्लोफेनाक Suppository</h3>
                       <Badge variant="outline" className="text-green-600">
                         1 साल से अधिक बच्चों के लिए
                       </Badge>
@@ -1055,10 +1048,10 @@ function AppEnglish({ onChangeLanguage }) {
                     {/* Additional Information */}
                     <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg">
                       <p className="text-sm text-green-800 leading-relaxed">
-                        बुखार या दर्द के लिए जो पैरासिटामोल से ठीक नहीं होता, आपका डॉक्टर डाइक्लोफेनाक सपोजिटरी जैसी मजबूत बुखार कम करने वाली या दर्द निवारक दवा की सिफारिश कर सकता है
+                        बुखार या दर्द के लिए जो पैरासिटामोल से ठीक नहीं होता, आपका डॉक्टर डाइक्लोफेनाक Suppository जैसी मजबूत बुखार कम करने वाली या दर्द निवारक दवा की सिफारिश कर सकता है
                       </p>
                       <p className="text-sm text-green-700 font-medium mt-2">
-                        <strong>नोट:</strong> डाइक्लोफेनाक सपोजिटरी पैरासिटामोल के साथ प्रतिक्रिया नहीं करती, लेकिन यह आइबूप्रोफेन सिरप के समान परिवार से संबंधित है। इन्हें एक साथ न लें और उनके बीच 8 घंटे का अंतर रखें
+                        <strong>Tandaan:</strong> डाइक्लोफेनाक Suppository पैरासिटामोल के साथ प्रतिक्रिया नहीं करती, लेकिन यह आइबूप्रोफेन Syrup के समान परिवार से संबंधित है। इन्हें एक साथ न लें और उनके बीच 8 घंटे का अंतर रखें
                       </p>
                     </div>
                     
@@ -1087,7 +1080,7 @@ function AppEnglish({ onChangeLanguage }) {
                   variant="outline"
                   className="px-8 py-3 text-lg"
                 >
-                  रीसेट करें
+                  I-reset
                 </Button>
               </div>
             )}
@@ -1098,7 +1091,7 @@ function AppEnglish({ onChangeLanguage }) {
                   variant="outline"
                   className="px-8 py-3 text-lg"
                 >
-                  रीसेट करें
+                  I-reset
                 </Button>
               </div>
             )}
@@ -1120,11 +1113,11 @@ function AppEnglish({ onChangeLanguage }) {
                   ) : (
                     <div className="space-y-4">
                       <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                        <h3 className="font-semibold text-green-800 mb-2">गणना की गई खुराक:</h3>
+                        <h3 className="font-semibold text-green-800 mb-2">गणना की गई Dosis:</h3>
                         <div className="grid gap-2 text-sm">
                           {result.isSuppository ? (
                             <p className="text-lg font-bold text-green-700">
-                              <strong>सपोजिटरी की संख्या:</strong> {result.suppositories} सपोजिटरी
+                              <strong>Suppository की संख्या:</strong> {result.suppositories} Suppository
                             </p>
                           ) : (
                             <p className="text-lg font-bold text-green-700">
@@ -1134,12 +1127,12 @@ function AppEnglish({ onChangeLanguage }) {
                           <p><strong>दवा:</strong> {result.medication.name}</p>
                           <p><strong>बच्चे का वजन:</strong> {result.weight} किलो</p>
                           <p><strong>आवृत्ति:</strong> हर 4-6 घंटे</p>
-                          <p><strong>अधिकतम दैनिक:</strong> {result.maxDailyDoses} खुराक</p>
+                          <p><strong>अधिकतम दैनिक:</strong> {result.maxDailyDoses} Dosis</p>
                           {/* NSAIDs Warning for Ibuprofen and Diclofenac */}
                           {(result.medication.ingredient === 'Ibuprofen' || result.medication.ingredient === 'Diclofenac') && (
                             <div className="mt-2 p-2 bg-orange-50 border border-orange-200 rounded-lg">
                               <p className="text-orange-800 text-sm font-medium">
-                                आइबूप्रोफेन सिरप और डाइक्लोफेनाक सपोजिटरी को एक साथ न मिलाएं; उनके बीच 8 घंटे का अंतर रखें
+                                आइबूप्रोफेन Syrup और डाइक्लोफेनाक Suppository को एक साथ न मिलाएं; उनके बीच 8 घंटे का अंतर रखें
                               </p>
                             </div>
                           )}
@@ -1191,7 +1184,7 @@ function AppEnglish({ onChangeLanguage }) {
                           <AlertDescription className="text-orange-800">
                             <strong>महत्वपूर्ण चेतावनी:</strong>
                             <ul className="list-disc mt-2 space-y-1" style={{listStylePosition: 'inside', direction: 'ltr', paddingLeft: '1.5rem'}}>
-                              <li>यह कैलकुलेटर केवल मार्गदर्शन के लिए है। अपने बच्चे को कोई भी दवा देने से पहले हमेशा डॉक्टर से परामर्श लें। सुझाई गई खुराक से अधिक न दें और चिकित्सकीय परामर्श के बिना 3-5 दिनों से अधिक समय तक दवा न दें।</li>
+                              <li>यह Kalkulador केवल मार्गदर्शन के लिए है। अपने बच्चे को कोई भी दवा देने से पहले हमेशा डॉक्टर से परामर्श लें। सुझाई गई Dosis से अधिक न दें और चिकित्सकीय परामर्श के बिना 3-5 दिनों से अधिक समय तक दवा न दें।</li>
                               {(() => {
                                 const ageValue = convertArabicToEnglish(age)
                                 const ageNum = parseFloat(ageValue)
@@ -1208,7 +1201,7 @@ function AppEnglish({ onChangeLanguage }) {
                   )
                 ) : (
                   <p className="text-gray-500 text-center py-8">
-                    खुराक की गणना करने के लिए बच्चे की उम्र और वजन दर्ज करें और दवा चुनें
+                    Dosis की गणना करने के लिए Ilagay ang edad at timbang ng bata और दवा चुनें
                   </p>
                 )}
               </CardContent>
@@ -1251,7 +1244,7 @@ function AppEnglish({ onChangeLanguage }) {
                           {/* Note about same concentration */}
                           <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
                             <p className="text-sm text-blue-800 leading-relaxed">
-                              यदि आपके पास पैरासिटामोल दवा है और आपको चित्रों में नहीं मिली, तो आप उसी सांद्रता वाली दवा का चयन कर सकते हैं और आपको वही आवश्यक खुराक मिलेगी। उदाहरण के लिए, सांद्रता 
+                              यदि आपके पास पैरासिटामोल दवा है और आपको चित्रों में नहीं मिली, तो आप उसी Konsentrasyon वाली दवा का चयन कर सकते हैं और आपको वही आवश्यक Dosis मिलेगी। उदाहरण के लिए, Konsentrasyon 
                               {' '}
                               <span className="font-bold text-blue-600" dir="ltr">120mg/5ml</span>
                             </p>
@@ -1297,7 +1290,7 @@ function AppEnglish({ onChangeLanguage }) {
                                 Popular Brand Names
                               </h4>
                               <div className="text-purple-800 text-sm mb-3">
-                                Available forms: <strong>सिरप</strong>
+                                Available forms: <strong>Syrup</strong>
                               </div>
                               <div className="grid gap-2 text-purple-800 text-sm">
                                 <div>• Nurofen - Nurofen</div>
@@ -1586,7 +1579,7 @@ function AppEnglish({ onChangeLanguage }) {
                         <div className="bg-teal-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <div className="text-teal-800 space-y-2">
                             <p>
-                              <strong className="text-blue-600">पैरासिटामोल दवाएं</strong> खाली पेट ली जा सकती हैं।
+                              <strong className="text-blue-600">Mga gamot na Paracetamol</strong> खाली पेट ली जा सकती हैं।
                             </p>
                             <p>
                               <strong className="text-red-600">आइबूप्रोफेन (ब्रूफेन) दवाएं</strong> अधिमानतः भोजन या हल्के भोजन के बाद ली जाती हैं।
@@ -1607,7 +1600,7 @@ function AppEnglish({ onChangeLanguage }) {
                 <AlertDescription className="text-red-800">
                   <strong className="block mb-2">महत्वपूर्ण सुरक्षा चेतावनियां:</strong>
                   <ul className="list-disc space-y-1 text-sm" style={{listStylePosition: 'inside', direction: 'ltr', paddingLeft: '1.5rem'}}>
-                    <li>अनुशंसित खुराक या अनुमत आवृत्ति से कभी अधिक न करें</li>
+                    <li>अनुशंसित Dosis या अनुमत आवृत्ति से कभी अधिक न करें</li>
                     <li>एक ही सक्रिय घटक युक्त एक से अधिक प्रकार की दवा न दें</li>
                     <li>चिकित्सा परामर्श के बिना 3-5 दिनों से अधिक समय तक दवा का उपयोग न करें</li>
                     <li>उपयोग से पहले सुनिश्चित करें कि दवा से कोई एलर्जी नहीं है</li>
