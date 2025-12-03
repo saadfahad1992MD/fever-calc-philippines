@@ -392,7 +392,7 @@ function AppEnglish({ onChangeLanguage }) {
         } else if (weightNum >= 17 && weightNum <= 25) {
           appropriateDose = 25
         } else {
-          setResult({ error: 'डाइक्लोफेनाक केवल 8-25 किलोग्राम वजन के लिए उपयुक्त है' })
+          setResult({ error: 'Ang Diclofenac ay angkop lamang para sa timbang na 8-25 kg' })
           return
         }
         
@@ -984,7 +984,7 @@ function AppEnglish({ onChangeLanguage }) {
                     {/* Note about same concentration */}
                     <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
                       <p className="text-sm text-blue-800 leading-relaxed">
-                        यदि आपके पास पैरासिटामोल दवा है और आपको उपरोक्त चित्रों में नहीं मिली, तो आप उसी Konsentrasyon वाली दवा का चयन कर सकते हैं और आपको वही आवश्यक Dosis मिलेगी। उदाहरण के लिए, Konsentrasyon 
+                        Kung mayroon kang gamot na Paracetamol at hindi mo ito nakita sa mga larawan sa itaas, maaari mong piliin ang gamot na may parehong konsentrasyon at makakakuha ka ng parehong kinakailangang dosis. Halimbawa, konsentrasyon 
                         {' '}
                         <span className="font-bold text-blue-600" dir="ltr">120mg/5ml</span>
                       </p>
@@ -995,19 +995,19 @@ function AppEnglish({ onChangeLanguage }) {
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-4 h-4 bg-green-500 rounded-full"></div>
-                      <h3 className="text-lg font-semibold text-green-700">आइबूप्रोफेन दवाएं</h3>
+                      <h3 className="text-lg font-semibold text-green-700">Mga Gamot na Ibuprofen</h3>
                       <Badge variant="outline" className="text-green-600">
-                        6 buwan से अधिक उम्र
+                        Edad higit sa 6 buwan
                       </Badge>
                     </div>
                     
                     {/* Additional Information */}
                     <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg">
                       <p className="text-sm text-green-800 leading-relaxed">
-                        बुखार या दर्द के लिए जो पैरासिटामोल से ठीक नहीं होता, आपका डॉक्टर एक मजबूत बुखार कम करने वाली या दर्द निवारक दवा जैसे आइबूप्रोफेन की सिफारिश कर सकता है, जिसे जरूरत पड़ने पर हर 4 घंटे में पैरासिटामोल के साथ बदलते हुए दिया जा सकता है
+                        Para sa lagnat o sakit na hindi tumutugon sa paracetamol, maaaring magrekomenda ang iyong doktor ng mas malakas na pampababa ng lagnat o pampaalis ng sakit tulad ng ibuprofen, na pinapalitan ng paracetamol bawat 4 na oras kung kinakailangan
                       </p>
                       <p className="text-sm text-green-700 font-medium mt-2">
-                        <strong>Tandaan:</strong> आइबूप्रोफेन पैरासिटामोल के साथ कोई विरोध नहीं करता और एक साथ दिया जा सकता है
+                        <strong>Tandaan:</strong> Ang ibuprofen ay hindi nakikipag-ugnayan sa paracetamol at maaaring inumin nang sabay
                       </p>
                     </div>
                     
@@ -1026,7 +1026,7 @@ function AppEnglish({ onChangeLanguage }) {
                   <div>
                     <div className="flex items-center gap-2 mb-4">
                       <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-                      <h3 className="text-lg font-semibold text-blue-700">पैरासिटामोल Suppository</h3>
+                      <h3 className="text-lg font-semibold text-blue-700">Paracetamol Suppository</h3>
                     </div>
                     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                       {suppositories.paracetamol.map(med => (
@@ -1039,19 +1039,19 @@ function AppEnglish({ onChangeLanguage }) {
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-4 h-4 bg-green-500 rounded-full"></div>
-                      <h3 className="text-lg font-semibold text-green-700">डाइक्लोफेनाक Suppository</h3>
+                      <h3 className="text-lg font-semibold text-green-700">Diclofenac Suppository</h3>
                       <Badge variant="outline" className="text-green-600">
-                        1 साल से अधिक बच्चों के लिए
+                        Para sa mga bata na higit sa 1 taon
                       </Badge>
                     </div>
                     
                     {/* Additional Information */}
                     <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg">
                       <p className="text-sm text-green-800 leading-relaxed">
-                        बुखार या दर्द के लिए जो पैरासिटामोल से ठीक नहीं होता, आपका डॉक्टर डाइक्लोफेनाक Suppository जैसी मजबूत बुखार कम करने वाली या दर्द निवारक दवा की सिफारिश कर सकता है
+                        Para sa lagnat o sakit na hindi tumutugon sa paracetamol, maaaring magrekomenda ang iyong doktor ng mas malakas na pampababa ng lagnat o pampaalis ng sakit tulad ng Diclofenac Suppository
                       </p>
                       <p className="text-sm text-green-700 font-medium mt-2">
-                        <strong>Tandaan:</strong> डाइक्लोफेनाक Suppository पैरासिटामोल के साथ प्रतिक्रिया नहीं करती, लेकिन यह आइबूप्रोफेन Syrup के समान परिवार से संबंधित है। इन्हें एक साथ न लें और उनके बीच 8 घंटे का अंतर रखें
+                        <strong>Tandaan:</strong> Ang Diclofenac Suppository ay hindi nakikipag-ugnayan sa paracetamol, ngunit ito ay kabilang sa parehong pamilya ng Ibuprofen Syrup. Huwag itong inumin nang sabay at panatilihin ang 8 oras na pagitan sa pagitan nila
                       </p>
                     </div>
                     
@@ -1113,26 +1113,26 @@ function AppEnglish({ onChangeLanguage }) {
                   ) : (
                     <div className="space-y-4">
                       <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                        <h3 className="font-semibold text-green-800 mb-2">गणना की गई Dosis:</h3>
+                        <h3 className="font-semibold text-green-800 mb-2">Kinakalkula na Dosis:</h3>
                         <div className="grid gap-2 text-sm">
                           {result.isSuppository ? (
                             <p className="text-lg font-bold text-green-700">
-                              <strong>Suppository की संख्या:</strong> {result.suppositories} Suppository
+                              <strong>Bilang ng Suppository:</strong> {result.suppositories} Suppository
                             </p>
                           ) : (
                             <p className="text-lg font-bold text-green-700">
-                              <strong>आवश्यक मात्रा:</strong> {result.volume} ml
+                              <strong>Kinakailangang dami:</strong> {result.volume} ml
                             </p>
                           )}
-                          <p><strong>दवा:</strong> {result.medication.name}</p>
-                          <p><strong>बच्चे का वजन:</strong> {result.weight} किलो</p>
-                          <p><strong>आवृत्ति:</strong> हर 4-6 घंटे</p>
-                          <p><strong>अधिकतम दैनिक:</strong> {result.maxDailyDoses} Dosis</p>
+                          <p><strong>Gamot:</strong> {result.medication.name}</p>
+                          <p><strong>Timbang ng bata:</strong> {result.weight} kilo</p>
+                          <p><strong>Dalas:</strong> Bawat 4-6 oras</p>
+                          <p><strong>Pinakamataas na araw-araw:</strong> {result.maxDailyDoses} Dosis</p>
                           {/* NSAIDs Warning for Ibuprofen and Diclofenac */}
                           {(result.medication.ingredient === 'Ibuprofen' || result.medication.ingredient === 'Diclofenac') && (
                             <div className="mt-2 p-2 bg-orange-50 border border-orange-200 rounded-lg">
                               <p className="text-orange-800 text-sm font-medium">
-                                आइबूप्रोफेन Syrup और डाइक्लोफेनाक Suppository को एक साथ न मिलाएं; उनके बीच 8 घंटे का अंतर रखें
+                                Huwag pagsamahin ang Ibuprofen Syrup at Diclofenac Suppository; panatilihin ang 8 oras na pagitan sa pagitan nila
                               </p>
                             </div>
                           )}
@@ -1182,9 +1182,9 @@ function AppEnglish({ onChangeLanguage }) {
                         <Alert className="bg-orange-50 border-orange-200">
                           <AlertTriangle className="h-4 w-4 text-orange-600" />
                           <AlertDescription className="text-orange-800">
-                            <strong>महत्वपूर्ण चेतावनी:</strong>
+                            <strong>Mahalagang Babala:</strong>
                             <ul className="list-disc mt-2 space-y-1" style={{listStylePosition: 'inside', direction: 'ltr', paddingLeft: '1.5rem'}}>
-                              <li>यह Kalkulador केवल मार्गदर्शन के लिए है। अपने बच्चे को कोई भी दवा देने से पहले हमेशा डॉक्टर से परामर्श लें। सुझाई गई Dosis से अधिक न दें और चिकित्सकीय परामर्श के बिना 3-5 दिनों से अधिक समय तक दवा न दें।</li>
+                              <li>Ang Kalkulador na ito ay para sa gabay lamang. Palaging kumonsulta sa doktor bago magbigay ng anumang gamot sa iyong anak. Huwag magbigay ng higit sa inirerekomendang Dosis at huwag magbigay ng gamot nang higit sa 3-5 araw nang walang medikal na payo.</li>
                               {(() => {
                                 const ageValue = convertArabicToEnglish(age)
                                 const ageNum = parseFloat(ageValue)
@@ -1201,7 +1201,7 @@ function AppEnglish({ onChangeLanguage }) {
                   )
                 ) : (
                   <p className="text-gray-500 text-center py-8">
-                    Dosis की गणना करने के लिए Ilagay ang edad at timbang ng bata और दवा चुनें
+                    Ilagay ang edad at timbang ng bata at pumili ng gamot upang makalkula ang Dosis
                   </p>
                 )}
               </CardContent>
@@ -1215,20 +1215,20 @@ function AppEnglish({ onChangeLanguage }) {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Info className="h-5 w-5 text-blue-600" />
-                    दवा परिवारों की व्यापक मार्गदर्शिका
+                    Komprehensibong Gabay sa mga Pamilya ng Gamot
                   </CardTitle>
                   <CardDescription>
-                    विभिन्न प्रकार की दवाओं, उनके काम करने के तरीके और उपलब्ध ब्रांड नामों के बारे में जानें
+                    Alamin ang tungkol sa iba't ibang uri ng mga gamot, kung paano sila gumagana, at ang mga available na brand names
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Accordion type="single" collapsible className="w-full">
-                     {/* पैरासिटामोल परिवार */}
+                     {/* Pamilya ng Paracetamol */}
                     <AccordionItem value="paracetamol">
                       <AccordionTrigger className="text-right">
                         <div className="flex items-center gap-2 md:gap-3">
                           <Pill className="h-5 w-5 text-blue-600" />
-                          <span className="text-lg font-semibold">पैरासिटामोल परिवार</span>
+                          <span className="text-lg font-semibold">Pamilya ng Paracetamol</span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent className="space-y-6 pt-4">
@@ -1244,7 +1244,7 @@ function AppEnglish({ onChangeLanguage }) {
                           {/* Note about same concentration */}
                           <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
                             <p className="text-sm text-blue-800 leading-relaxed">
-                              यदि आपके पास पैरासिटामोल दवा है और आपको चित्रों में नहीं मिली, तो आप उसी Konsentrasyon वाली दवा का चयन कर सकते हैं और आपको वही आवश्यक Dosis मिलेगी। उदाहरण के लिए, Konsentrasyon 
+                              Kung mayroon kang gamot na Paracetamol at hindi mo ito nakita sa mga larawan, maaari mong piliin ang gamot na may parehong konsentrasyon at makakakuha ka ng parehong kinakailangang dosis. Halimbawa, konsentrasyon 
                               {' '}
                               <span className="font-bold text-blue-600" dir="ltr">120mg/5ml</span>
                             </p>
@@ -1273,7 +1273,7 @@ function AppEnglish({ onChangeLanguage }) {
                       <AccordionTrigger className="text-right">
                         <div className="flex items-center gap-2 md:gap-3">
                           <Flame className="h-5 w-5 text-red-600" />
-                          <span className="text-lg font-semibold">आइबूप्रोफेन और डाइक्लोफेनाक "NSAIDs" परिवार</span>
+                          <span className="text-lg font-semibold">Pamilya ng Ibuprofen at Diclofenac "NSAIDs"</span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent className="space-y-6 pt-4">
@@ -1327,8 +1327,8 @@ function AppEnglish({ onChangeLanguage }) {
                       <AccordionTrigger className="text-right">
                         <div className="flex items-center gap-2 md:gap-3">
                           <Shield className="h-5 w-5 text-green-600" />
-                          <span className="text-lg font-semibold">दवा तुलना और उपयोग दिशानिर्देश</span>
-                          <Badge variant="secondary" className="bg-green-100 text-green-800">पूर्ण मार्गदर्शिका</Badge>
+                          <span className="text-lg font-semibold">Paghahambing ng Gamot at Gabay sa Paggamit</span>
+                          <Badge variant="secondary" className="bg-green-100 text-green-800">Kumpletong Gabay</Badge>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent className="space-y-6 pt-4">
@@ -1486,10 +1486,10 @@ function AppEnglish({ onChangeLanguage }) {
                 <CardHeader className="p-4 md:p-6">
                   <CardTitle className="flex items-center gap-2 text-base md:text-lg">
                     <Info className="h-4 w-4 md:h-5 md:w-5 text-yellow-600" />
-                    बच्चों के लिए बुखार की दवाओं के बारे में अक्सर पूछे जाने वाले प्रश्न
+                    Mga Madalas Itanong tungkol sa Mga Gamot sa Lagnat para sa mga Bata
                   </CardTitle>
                   <CardDescription className="text-xs md:text-sm">
-                    बच्चों के लिए बुखार की दवाओं के उपयोग के बारे में सबसे आम प्रश्नों के उत्तर
+                    Mga sagot sa mga pinakakaraniwang tanong tungkol sa paggamit ng mga gamot sa lagnat para sa mga bata
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-3 md:p-6">
@@ -1503,14 +1503,14 @@ function AppEnglish({ onChangeLanguage }) {
                             <span className="text-blue-600 font-bold text-xs md:text-sm">1</span>
                           </div>
                           <span className="text-blue-800 font-semibold text-sm md:text-lg">
-                            पैरासिटामोल दवाओं और (आइबूप्रोफेन और डाइक्लोफेनाक) दवाओं के बीच क्या अंतर है?
+                            Ano ang pagkakaiba sa pagitan ng mga gamot na Paracetamol at (Ibuprofen at Diclofenac)?
                           </span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent>
                         <div className="bg-blue-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <p className="text-blue-800 text-sm md:text-base">
-                            दोनों बुखार कम करने वाली और दर्द निवारक दवाएं हैं। हालांकि, (आइबूप्रोफेन और डाइक्लोफेनाक) को पैरासिटामोल परिवार की तुलना में बुखार और दर्द को कम करने में अधिक मजबूत माना जाता है।
+                            Pareho silang pampababa ng lagnat at pampaalis ng sakit. Gayunpaman, ang (Ibuprofen at Diclofenac) ay itinuturing na mas malakas sa pagbaba ng lagnat at pagpapaginhawa ng sakit kumpara sa pamilya ng Paracetamol.
                           </p>
                         </div>
                       </AccordionContent>
@@ -1524,14 +1524,14 @@ function AppEnglish({ onChangeLanguage }) {
                             <span className="text-green-600 font-bold text-sm">2</span>
                           </div>
                           <span className="text-green-800 font-semibold text-sm md:text-lg">
-                            क्या पैरासिटामोल और (आइबूप्रोफेन और डाइक्लोफेनाक) दवाओं के बीच कोई प्रतिक्रिया है?
+                            May interaksyon ba sa pagitan ng Paracetamol at (Ibuprofen at Diclofenac)?
                           </span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent>
                         <div className="bg-green-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <p className="text-green-800">
-                            उनके बीच कोई प्रतिक्रिया नहीं है, और उन्हें एक ही समय में लिया जा सकता है, लेकिन आपका डॉक्टर उनके बीच एक विशिष्ट समय की सिफारिश कर सकता है, जैसे कि पैरासिटामोल और आइबूप्रोफेन के बीच हर 4 घंटे, ताकि आप पूरे दिन दवाएं दे सकें।
+                            Walang interaksyon sa pagitan nila, at maaari silang inumin nang sabay, ngunit maaaring magrekomenda ang iyong doktor ng tiyak na oras sa pagitan nila, tulad ng bawat 4 na oras sa pagitan ng Paracetamol at Ibuprofen, upang makapagbigay ka ng mga gamot sa buong araw.
                           </p>
                         </div>
                       </AccordionContent>
@@ -1545,7 +1545,7 @@ function AppEnglish({ onChangeLanguage }) {
                             <span className="text-orange-600 font-bold text-sm">3</span>
                           </div>
                           <span className="text-orange-800 font-semibold text-sm md:text-lg">
-                            कौन सी दवाओं को एक ही समय में नहीं मिलाना चाहिए?
+                            Aling mga gamot ang hindi dapat pagsamahin nang sabay?
                           </span>
                         </div>
                       </AccordionTrigger>
@@ -1553,10 +1553,10 @@ function AppEnglish({ onChangeLanguage }) {
                         <div className="bg-orange-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <div className="text-orange-800 space-y-2">
                             <p>
-                              <strong className="text-red-600">पैरासिटामोल युक्त दवाओं को एक साथ न मिलाएं</strong> - उनके बीच 4-6 घंटे का अंतर होना चाहिए।
+                              <strong className="text-red-600">Huwag pagsamahin ang mga gamot na naglalaman ng Paracetamol</strong> - dapat may 4-6 oras na pagitan sa pagitan nila.
                             </p>
                             <p>
-                              <strong className="text-red-600">और आइबूप्रोफेन (ब्रूफेन) या डाइक्लोफेनाक युक्त दवाओं को एक साथ न मिलाएं</strong> - उनके बीच 8 घंटे का अंतर होना चाहिए।
+                              <strong className="text-red-600">At huwag pagsamahin ang mga gamot na naglalaman ng Ibuprofen (Brufen) o Diclofenac</strong> - dapat may 8 oras na pagitan sa pagitan nila.
                             </p>
                           </div>
                         </div>
@@ -1571,7 +1571,7 @@ function AppEnglish({ onChangeLanguage }) {
                             <span className="text-teal-600 font-bold text-sm">4</span>
                           </div>
                           <span className="text-teal-800 font-semibold text-sm md:text-lg">
-                            क्या दवाएं खाने के बाद या खाली पेट लेनी चाहिए?
+                            Dapat bang inumin ang mga gamot pagkatapos kumain o sa walang laman na tiyan?
                           </span>
                         </div>
                       </AccordionTrigger>
@@ -1579,10 +1579,10 @@ function AppEnglish({ onChangeLanguage }) {
                         <div className="bg-teal-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <div className="text-teal-800 space-y-2">
                             <p>
-                              <strong className="text-blue-600">Mga gamot na Paracetamol</strong> खाली पेट ली जा सकती हैं।
+                              <strong className="text-blue-600">Mga gamot na Paracetamol</strong> ay maaaring inumin sa walang laman na tiyan.
                             </p>
                             <p>
-                              <strong className="text-red-600">आइबूप्रोफेन (ब्रूफेन) दवाएं</strong> अधिमानतः भोजन या हल्के भोजन के बाद ली जाती हैं।
+                              <strong className="text-red-600">Mga gamot na Ibuprofen (Brufen)</strong> ay mas mainam na inumin pagkatapos kumain o may kaunting pagkain.
                             </p>
                           </div>
                         </div>
@@ -1598,13 +1598,13 @@ function AppEnglish({ onChangeLanguage }) {
               <Alert className="bg-red-50 border-red-200">
                 <AlertTriangle className="h-4 w-4 text-red-600" />
                 <AlertDescription className="text-red-800">
-                  <strong className="block mb-2">महत्वपूर्ण सुरक्षा चेतावनियां:</strong>
+                  <strong className="block mb-2">Mahalagang Babala sa Kaligtasan:</strong>
                   <ul className="list-disc space-y-1 text-sm" style={{listStylePosition: 'inside', direction: 'ltr', paddingLeft: '1.5rem'}}>
-                    <li>अनुशंसित Dosis या अनुमत आवृत्ति से कभी अधिक न करें</li>
-                    <li>एक ही सक्रिय घटक युक्त एक से अधिक प्रकार की दवा न दें</li>
-                    <li>चिकित्सा परामर्श के बिना 3-5 दिनों से अधिक समय तक दवा का उपयोग न करें</li>
-                    <li>उपयोग से पहले सुनिश्चित करें कि दवा से कोई एलर्जी नहीं है</li>
-                    <li>सभी दवाओं को बच्चों की पहुंच से दूर रखें</li>
+                    <li>Huwag kailanman lumampas sa inirerekomendang Dosis o pinapayagang dalas</li>
+                    <li>Huwag magbigay ng higit sa isang uri ng gamot na naglalaman ng parehong aktibong sangkap</li>
+                    <li>Huwag gumamit ng gamot nang higit sa 3-5 araw nang walang medikal na payo</li>
+                    <li>Tiyaking walang allergy sa gamot bago gamitin</li>
+                    <li>Panatilihing malayo sa mga bata ang lahat ng gamot</li>
                   </ul>
                 </AlertDescription>
               </Alert>
