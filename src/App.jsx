@@ -738,7 +738,7 @@ function AppEnglish({ onChangeLanguage }) {
               }}
               className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors duration-200"
             >
-              <span>Dosis की गणना करें</span>
+              <span>Kalkulahin ang Dosis</span>
               <span>💊</span>
             </button>
           </div>
@@ -874,11 +874,11 @@ function AppEnglish({ onChangeLanguage }) {
                   {ageCategory && (
                     <div className="space-y-2 animate-in slide-in-from-top-2 duration-300">
                       <label className="text-sm font-medium">
-                        {ageCategory === 'infant' ? 'Pumili ng edad sa buwan' : 'सालों में उम्र चुनें'}
+                        {ageCategory === 'infant' ? 'Pumili ng edad sa buwan' : 'Pumili ng edad sa taon'}
                       </label>
                       <Select value={age} onValueChange={setAge}>
                         <SelectTrigger className="text-lg">
-                          <SelectValue placeholder={ageCategory === 'infant' ? 'buwan चुनें' : 'साल चुनें'} />
+                          <SelectValue placeholder={ageCategory === 'infant' ? 'Pumili ng buwan' : 'Pumili ng taon'} />
                         </SelectTrigger>
                         <SelectContent>
                           {ageCategory === 'infant' ? (
@@ -907,7 +907,7 @@ function AppEnglish({ onChangeLanguage }) {
                       <label className="text-sm font-medium">Timbang ng Bata (kg)</label>
                       <Select value={weight} onValueChange={setWeight}>
                         <SelectTrigger className="text-lg">
-                          <SelectValue placeholder="वजन चुनें" />
+                          <SelectValue placeholder="Pumili ng timbang" />
                         </SelectTrigger>
                         <SelectContent>
                           {ageCategory === 'infant' ? (
@@ -1099,7 +1099,7 @@ function AppEnglish({ onChangeLanguage }) {
             {/* Results */}
             <Card id="results-section" className="transition-all duration-500">
               <CardHeader>
-                <CardTitle>गणना का परिणाम</CardTitle>
+                <CardTitle>Resulta ng Kalkulasyon</CardTitle>
               </CardHeader>
               <CardContent>
                 {result ? (
@@ -1173,7 +1173,7 @@ function AppEnglish({ onChangeLanguage }) {
                           }}
                           className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-lg shadow-md transition-colors duration-200">
                           <Info className="h-4 w-4 ml-2" />
-                          अक्सर पूछे जाने वाले प्रश्न और अतिरिक्त जानकारी के लिए यहां क्लिक करें
+                          I-click dito para sa Mga Madalas Itanong at Karagdagang Impormasyon
                         </Button>
                       </div>
                       
