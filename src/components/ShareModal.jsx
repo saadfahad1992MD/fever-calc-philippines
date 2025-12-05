@@ -4,7 +4,7 @@ import { Button } from './ui/button.jsx'
 import { X } from 'lucide-react'
 
 export function ShareModal({ isOpen, onClose }) {
-  const websiteUrl = 'https://fever-calc-philippines.vercel.app'
+  const websiteUrl = 'https://fevercalc.com'
   
   const copyToClipboard = () => {
     navigator.clipboard.writeText(websiteUrl)
@@ -34,8 +34,8 @@ export function ShareModal({ isOpen, onClose }) {
           {/* QR Code */}
           <div className="bg-white p-4 rounded-lg shadow-md border-2 border-gray-200">
             <img 
-              src="/qr-code-philippines.png" 
-              alt="QR Code for Fever Calculator Philippines" 
+              src="/qr-code.png" 
+              alt="QR Code para sa Fever Calculator" 
               className="w-48 h-48"
             />
           </div>
@@ -82,7 +82,7 @@ export function ShareModal({ isOpen, onClose }) {
           {/* Website URL */}
           <div className="text-center">
             <p className="text-sm text-gray-500">Website:</p>
-            <p className="text-lg font-semibold text-pink-600">fever-calc-philippines.vercel.app</p>
+            <p className="text-lg font-semibold text-pink-600">fevercalc.com</p>
           </div>
         </div>
       </DialogContent>
